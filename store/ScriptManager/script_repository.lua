@@ -1,5 +1,7 @@
 -- ScriptManager - Script Repository
 
+local SCRIPT_VERSION = "0.2"
+
 local scripts_repository = {
     {
         name = "AcJokerScript",
@@ -11,30 +13,6 @@ local scripts_repository = {
             source_url = "https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/AcjokerScript.lua",
             script_relpath = "AcjokerScript.lua",
             verify_file_begins_with = "   --",
-        },
-    },
-    {
-        name = "Policify",
-        author = "Hexarobi",
-        description = "Turns any vehicle into a police vehicle, with controllable flashing lights and sirens.",
-        project_url = "https://github.com/hexarobi/stand-lua-policify",
-        discord_url = "https://discord.gg/2u5HbHPB9y",
-        install_config = {
-            source_url = "https://raw.githubusercontent.com/hexarobi/stand-lua-policify/main/Policify.lua",
-            script_relpath = "Policify.lua",
-            verify_file_begins_with = "--",
-        },
-    },
-    {
-        name="Constructor",
-        author="Hexarobi",
-        description="Load, edit, and create custom vehicles, maps and skins.",
-        project_url = "https://github.com/hexarobi/stand-lua-constructor",
-        discord_url = "https://discord.gg/2u5HbHPB9y",
-        install_config={
-            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-constructor/main/Constructor.lua",
-            script_relpath="Constructor.lua",
-            verify_file_begins_with="--",
         },
     },
     {
@@ -50,6 +28,18 @@ local scripts_repository = {
         }
     },
     {
+        name="Constructor",
+        author="Hexarobi",
+        description="Load, edit, and create custom vehicles, maps and skins.",
+        project_url = "https://github.com/hexarobi/stand-lua-constructor",
+        discord_url = "https://discord.gg/2u5HbHPB9y",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-constructor/main/Constructor.lua",
+            script_relpath="Constructor.lua",
+            verify_file_begins_with="--",
+        },
+    },
+    {
         name="next-translate",
         author="Lance",
         description="Next-Translate is a chat translator script that is as simple and intelligent as possible",
@@ -60,7 +50,25 @@ local scripts_repository = {
             verify_file_begins_with="--",
         }
     },
-
+    {
+        name = "Policify",
+        author = "Hexarobi",
+        description = "Turns any vehicle into a police vehicle, with controllable flashing lights and sirens.",
+        project_url = "https://github.com/hexarobi/stand-lua-policify",
+        discord_url = "https://discord.gg/2u5HbHPB9y",
+        install_config = {
+            source_url = "https://raw.githubusercontent.com/hexarobi/stand-lua-policify/main/Policify.lua",
+            script_relpath = "Policify.lua",
+            verify_file_begins_with = "--",
+        },
+    },
+    {
+        name = "RTL: REPLICA Theme Loader",
+        author = "ukn",
+        description = "Load a Stand menu theme from several that replicate other menus look and feel.",
+        project_url = "https://github.com/ukn-repos/rtl",
+        discord_url = "https://discord.gg/N43aKNDJyF",
+    },
     {
         name="SlotBot",
         author="Hexarobi",
