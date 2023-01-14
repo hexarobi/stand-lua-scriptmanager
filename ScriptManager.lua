@@ -17,7 +17,7 @@ local selected_branch = AUTO_UPDATE_BRANCHES[SELECTED_BRANCH_INDEX][1]
 ---
 
 -- Auto Updater from https://github.com/hexarobi/stand-lua-auto-updater
-local status, auto_updater = pcall(require, "auto-updater")
+local status, auto_updater = pcall(require, "auto-updater-dev")
 if not status then
     local auto_update_complete = nil util.toast("Installing auto-updater...", TOAST_ALL)
     async_http.init("raw.githubusercontent.com", "/hexarobi/stand-lua-auto-updater/dev/auto-updater-dev.lua",
