@@ -4,7 +4,7 @@
 -- Manages installing and updating other Lua Scripts
 -- https://github.com/hexarobi/stand-lua-scriptmanager
 
-local SCRIPT_VERSION = "0.3"
+local SCRIPT_VERSION = "0.3.1"
 local AUTO_UPDATE_BRANCHES = {
     { "main", {}, "More stable, but updated less often.", "main", },
     { "dev", {}, "Cutting edge updates, but less stable.", "dev", },
@@ -77,8 +77,8 @@ if not load_status then error("Could not load script repository. "..script_repos
 local status_crypto, crypto = pcall(require, "crypto")
 if not status_crypto then util.log("Could not load crypto lib") end
 
-local status_inspect, inspect = pcall(require, "inspect")
-if not status_inspect then error("Could not load inspect lib. This should have been auto-installed.") end
+--local status_inspect, inspect = pcall(require, "inspect")
+--if not status_inspect then error("Could not load inspect lib. This should have been auto-installed.") end
 
 ---
 --- Data
