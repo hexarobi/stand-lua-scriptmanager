@@ -1,19 +1,14 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.2"
+local SCRIPT_VERSION = "0.3"
 
 local scripts_repository = {
     {
         name = "AcJokerScript",
         author = "AcJoker",
-        description = "Turns any vehicle into a police vehicle, with controllable flashing lights and sirens.",
+        description = "Lots of useful and fun options, custom built by AcJoker.",
         project_url = "https://github.com/acjoker8818/AcjokerScript",
         discord_url = "https://discord.gg/fn4uBbFNnA",
-        install_config = {
-            source_url = "https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/AcjokerScript.lua",
-            script_relpath = "AcjokerScript.lua",
-            verify_file_begins_with = "   --",
-        },
     },
     {
         name="Andy's Script",
@@ -21,11 +16,12 @@ local scripts_repository = {
         description="AndyScript for Stand GTA V mod menu",
         project_url="https://github.com/Lancito01/AndyScript",
         discord_url="https://discord.gg/9vzATnaM9c",
-        install_config={
-            source_url="https://raw.githubusercontent.com/Lancito01/AndyScript/main/AndyScript.lua",
-            script_relpath="AndyScript.lua",
-            verify_file_begins_with="local",
-        }
+    },
+    {
+        name="BallDrop",
+        author="BigTuna76",
+        description="A silly little script that allows you to unleash a torrent of oversized soccer balls from above on yourself or another player",
+        project_url="https://github.com/BigTuna76/stand-lua-balldrop",
     },
     {
         name="Constructor",
@@ -33,22 +29,19 @@ local scripts_repository = {
         description="Load, edit, and create custom vehicles, maps and skins.",
         project_url = "https://github.com/hexarobi/stand-lua-constructor",
         discord_url = "https://discord.gg/2u5HbHPB9y",
-        install_config={
-            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-constructor/main/Constructor.lua",
-            script_relpath="Constructor.lua",
-            verify_file_begins_with="--",
-        },
+    },
+    {
+        name="HornSongs",
+        author="Hexarobi",
+        description="Play musical song files using your vehicle horn.",
+        project_url = "https://github.com/hexarobi/stand-lua-hornsongs",
+        discord_url = "https://discord.gg/2u5HbHPB9y",
     },
     {
         name="next-translate",
         author="Lance",
         description="Next-Translate is a chat translator script that is as simple and intelligent as possible",
         project_url="https://github.com/xSetrox/next-translate",
-        install_config={
-            source_url="https://raw.githubusercontent.com/xSetrox/next-translate/main/next_translate.lua",
-            script_relpath="next_translate.lua",
-            verify_file_begins_with="--",
-        }
     },
     {
         name = "Policify",
@@ -56,11 +49,6 @@ local scripts_repository = {
         description = "Turns any vehicle into a police vehicle, with controllable flashing lights and sirens.",
         project_url = "https://github.com/hexarobi/stand-lua-policify",
         discord_url = "https://discord.gg/2u5HbHPB9y",
-        install_config = {
-            source_url = "https://raw.githubusercontent.com/hexarobi/stand-lua-policify/main/Policify.lua",
-            script_relpath = "Policify.lua",
-            verify_file_begins_with = "--",
-        },
     },
     {
         name = "RTL: REPLICA Theme Loader",
@@ -75,11 +63,6 @@ local scripts_repository = {
         description="Automatic spinning of casino slot machine to make a quick $50mil per day.",
         project_url = "https://github.com/hexarobi/stand-lua-slotbot",
         discord_url = "https://discord.gg/2u5HbHPB9y",
-        install_config={
-            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-slotbot/main/SlotBot.lua",
-            script_relpath="SlotBot.lua",
-            verify_file_begins_with="--",
-        },
     },
 }
 
