@@ -4,7 +4,7 @@
 -- Manages installing and updating other Lua Scripts
 -- https://github.com/hexarobi/stand-lua-scriptmanager
 
-local SCRIPT_VERSION = "0.3.1"
+local SCRIPT_VERSION = "0.4"
 local AUTO_UPDATE_BRANCHES = {
     { "main", {}, "More stable, but updated less often.", "main", },
     { "dev", {}, "Cutting edge updates, but less stable.", "dev", },
@@ -290,13 +290,11 @@ local function build_script_menu(script)
     init_menus(script.menus, "main_list")
     script.menus.main_list.title = menu.divider(script.menus.main, script.name)
     if not filesystem.exists(script.install_config.script_path) then
-        if script.menus.main_list.install == nil then
-            script.menus.main_list.install = menu.action(script.menus.main, t("Install"), {}, t("Download and install or update this script."), function()
-                local main_menu_ref = clear_menu(script)
-                install_script(script)
-                rebuild_menu(script, main_menu_ref)
-            end)
-        end
+        script.menus.main_list.install = menu.action(script.menus.main, t("Install"), {}, t("Download and install or update this script."), function()
+            local main_menu_ref = clear_menu(script)
+            install_script(script)
+            rebuild_menu(script, main_menu_ref)
+        end)
     else
         --debug_log("File exists " .. script.install_config.script_path)
 
