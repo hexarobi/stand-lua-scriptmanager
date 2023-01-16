@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.3"
+local SCRIPT_VERSION = "0.4"
 
 local scripts_repository = {
     {
@@ -29,6 +29,13 @@ local scripts_repository = {
         description="Load, edit, and create custom vehicles, maps and skins.",
         project_url = "https://github.com/hexarobi/stand-lua-constructor",
         discord_url = "https://discord.gg/2u5HbHPB9y",
+    },
+    {
+        name="HeistControl",
+        author="IceDoomfist",
+        description="Complete your heists with ease.",
+        project_url = "https://github.com/IceDoomfist/Stand-Heist-Control",
+        discord_url = "https://discord.gg/KTFAYQn5Xz",
     },
     {
         name="HornSongs",
