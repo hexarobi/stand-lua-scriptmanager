@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.4"
+local SCRIPT_VERSION = "0.5"
 
 local scripts_repository = {
     {
@@ -9,6 +9,10 @@ local scripts_repository = {
         description = "Lots of useful and fun options, custom built by AcJoker.",
         project_url = "https://github.com/acjoker8818/AcjokerScript",
         discord_url = "https://discord.gg/fn4uBbFNnA",
+        install_config={
+            source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/AcjokerScript.lua",
+            script_relpath="AcjokerScript.lua",
+        }
     },
     {
         name="Andy's Script",
@@ -31,6 +35,22 @@ local scripts_repository = {
         discord_url = "https://discord.gg/2u5HbHPB9y",
     },
     {
+        name="CollectibleHelper",
+        author="aaronlink127",
+        description="Shows blips on the map for collectibles.",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/CollectibleHelper.lua",
+            script_relpath="CollectibleHelper.lua",
+        }
+    },
+    {
+        name="GameCrunchScript",
+        author="GameCrunch",
+        description="real.",
+        project_url = "https://github.com/Game-Crunch/GameCrunchScript",
+        discord_url = "https://discord.gg/8eGrTbQYce",
+    },
+    {
         name="HeistControl",
         author="IceDoomfist",
         description="Complete your heists with ease.",
@@ -43,6 +63,27 @@ local scripts_repository = {
         description="Play musical song files using your vehicle horn.",
         project_url = "https://github.com/hexarobi/stand-lua-hornsongs",
         discord_url = "https://discord.gg/2u5HbHPB9y",
+    },
+    {
+        name="Jinxscript",
+        author="Prisuhm",
+        description="A must-have script full of great options.",
+        discord_url = "https://discord.gg/7AYFEtCXwm",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/JinxScript.lua",
+            script_relpath="JinxScript.lua",
+        }
+    },
+    {
+        name="MusinessBanagement",
+        author="ICYPhoenix and Ren",
+        description="Original MB project file, slightly different from the version now found in Stand repo.",
+        discord_url = "https://discord.gg/KYav78KmNc",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/MusinessBanagersource.lua",
+            script_relpath="MusinessBanagersource.lua",
+            script_run_name="MusinessBanagersource"
+        }
     },
     {
         name="next-translate",
