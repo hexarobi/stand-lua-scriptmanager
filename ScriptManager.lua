@@ -4,7 +4,7 @@
 -- Manages installing and updating other Lua Scripts
 -- https://github.com/hexarobi/stand-lua-scriptmanager
 
-local SCRIPT_VERSION = "0.5"
+local SCRIPT_VERSION = "0.6"
 local AUTO_UPDATE_BRANCHES = {
     { "main", {}, "More stable, but updated less often.", "main", },
     { "dev", {}, "Cutting edge updates, but less stable.", "dev", },
@@ -61,8 +61,8 @@ local auto_update_config = {
     dependencies={
         {
             name="scripts_repository",
-            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-scriptmanager/main/store/ScriptManager/script_repository.lua",
-            script_relpath="store/ScriptManager/script_repository.lua",
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-scriptmanager/main/lib/ScriptManager/script_repository.lua",
+            script_relpath="lib/ScriptManager/script_repository.lua",
         }
     }
 }
