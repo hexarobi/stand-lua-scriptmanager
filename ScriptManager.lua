@@ -4,7 +4,7 @@
 -- Manages installing and updating other Lua Scripts
 -- https://github.com/hexarobi/stand-lua-scriptmanager
 
-local SCRIPT_VERSION = "0.4"
+local SCRIPT_VERSION = "0.5"
 local AUTO_UPDATE_BRANCHES = {
     { "main", {}, "More stable, but updated less often.", "main", },
     { "dev", {}, "Cutting edge updates, but less stable.", "dev", },
@@ -62,7 +62,7 @@ local auto_update_config = {
         {
             name="scripts_repository",
             source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-scriptmanager/main/store/ScriptManager/script_repository.lua",
-            script_relpath="lib/ScriptManager/script_repository.lua",
+            script_relpath="store/ScriptManager/script_repository.lua",
         }
     }
 }
@@ -183,7 +183,7 @@ local function default_script_parameters(script)
         if script.install_config == nil then
             script.install_config = {}
         end
-        if script.install_config.project_url == nil and script.project_url ~= nil then
+        if script.install_config.source_url == nil and script.install_config.project_url == nil and script.project_url ~= nil then
             script.install_config.project_url = script.project_url
         end
         if script.install_config.name == nil and script.name ~= nil then
@@ -277,8 +277,9 @@ end
 
 local function rebuild_menu(script, main_menu_ref)
     script.menus.main = main_menu_ref
-    --menu.focus()
-    menu.trigger_command(script.menus.main)
+    if menu.is_ref_valid(script.menus.main) then
+        menu.trigger_command(script.menus.main)
+    end
 end
 
 local function build_script_menu(script)
