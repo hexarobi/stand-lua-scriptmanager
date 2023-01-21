@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.6"
+local SCRIPT_VERSION = "0.7"
 
 local scripts_repository = {
     {
@@ -35,6 +35,13 @@ local scripts_repository = {
         discord_url = "https://discord.gg/2u5HbHPB9y",
     },
     {
+        name="ClearTraffic",
+        author="Hexarobi",
+        description="Clears traffic from all roads for easy driving and drifting. Syncs to all players in lobby.",
+        project_url = "https://github.com/hexarobi/stand-lua-cleartraffic",
+        discord_url = "https://discord.gg/2u5HbHPB9y",
+    },
+    {
         name="CollectibleHelper",
         author="aaronlink127",
         description="Shows blips on the map for collectibles.",
@@ -43,6 +50,13 @@ local scripts_repository = {
             script_relpath="CollectibleHelper.lua",
         }
     },
+    --{
+    --    name="Copyify",
+    --    author=" JayMontana36",
+    --    description="real.",
+    --    project_url = "https://github.com/JayMontana36/JM36_Copify",
+    --    discord_url = "https://discord.gg/zaCVjtVP6x",
+    --},
     {
         name="GameCrunchScript",
         author="GameCrunch",
