@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.7"
+local SCRIPT_VERSION = "0.8"
 
 local scripts_repository = {
     {
@@ -89,6 +89,12 @@ local scripts_repository = {
         }
     },
     {
+        name="LanceLoadout",
+        author="Lance",
+        description="A bite-sized loadout manager for GTA V. Quickly save, clear, and load your loadouts from file. Share .loadout files with your friends and load them with no hassle.",
+        project_url = "https://github.com/xSetrox/lance-loadout",
+    },
+    {
         name="MusinessBanagement",
         author="ICYPhoenix and Ren",
         description="Original MB project file, slightly different from the version now found in Stand repo.",
@@ -104,6 +110,12 @@ local scripts_repository = {
         author="Lance",
         description="Next-Translate is a chat translator script that is as simple and intelligent as possible",
         project_url="https://github.com/xSetrox/next-translate",
+    },
+    {
+        name="NovaMeter",
+        author="NovaPlays",
+        description="A fully customizable speedometer for Gta with stand mod",
+        project_url="https://github.com/NovaPlays134/NovaMeter",
     },
     {
         name = "Policify",
