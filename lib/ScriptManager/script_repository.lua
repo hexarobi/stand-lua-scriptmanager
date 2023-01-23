@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.8"
+local SCRIPT_VERSION = "0.9"
 
 local scripts_repository = {
     {
@@ -12,6 +12,59 @@ local scripts_repository = {
         install_config={
             source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/AcjokerScript.lua",
             script_relpath="AcjokerScript.lua",
+            dependencies={
+                {
+                    name="AClangLib",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/AClangLib.lua",
+                    script_relpath="resources/AcjokerScript/AClangLib.lua",
+                },
+                {
+                    name="ACJSTables",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/ACJSTables.lua",
+                    script_relpath="resources/AcjokerScript/ACJSTables.lua",
+                },
+                -- Languages
+                {
+                    name="ACChinese",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/ACChinese.lua",
+                    script_relpath="resources/AcjokerScript/Languages/ACChinese.lua",
+                },
+                {
+                    name="ACDutch",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/ACDutch.lua",
+                    script_relpath="resources/AcjokerScript/Languages/ACDutch.lua",
+                },
+                {
+                    name="ACFrench",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/ACFrench.lua",
+                    script_relpath="resources/AcjokerScript/Languages/ACFrench.lua",
+                },
+                {
+                    name="ACGerman",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/ACGerman.lua",
+                    script_relpath="resources/AcjokerScript/Languages/ACGerman.lua",
+                },
+                {
+                    name="ACLithuanian",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/ACLithuanian.lua",
+                    script_relpath="resources/AcjokerScript/Languages/ACLithuanian.lua",
+                },
+                {
+                    name="ACPolish",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/ACPolish.lua",
+                    script_relpath="resources/AcjokerScript/Languages/ACPolish.lua",
+                },
+                {
+                    name="ACPortuguese",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/ACPortuguese.lua",
+                    script_relpath="resources/AcjokerScript/Languages/ACPortuguese.lua",
+                },
+                {
+                    name="ACSpanish",
+                    source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/ACSpanish.lua",
+                    script_relpath="resources/AcjokerScript/Languages/ACSpanish.lua",
+                },
+            }
         }
     },
     {
