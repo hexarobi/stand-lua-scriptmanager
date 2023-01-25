@@ -4,9 +4,9 @@ local SCRIPT_VERSION = "0.10"
 
 local scripts_repository = {
     {
-        name = "AcJokerScript",
-        author = "AcJoker",
-        description = "Lots of useful and fun options, custom built by AcJoker.",
+        name = "AcjokerScript",
+        author = "Acjoker",
+        description = "Super fun script with tons of options, lovingly crafted by Acjoker. Jesus cage those griefing sinners!",
         project_url = "https://github.com/acjoker8818/AcjokerScript",
         discord_url = "https://discord.gg/fn4uBbFNnA",
     },
