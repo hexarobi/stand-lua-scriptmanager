@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.10"
+local SCRIPT_VERSION = "0.11"
 
 local scripts_repository = {
     {
@@ -145,5 +145,37 @@ local scripts_repository = {
         }
     },
 }
+
+local function build_natives_script()
+    local natives_versions = {
+        "1627063482",
+        "1640181023",
+        "1651208000",
+        "1660775568",
+        "1660775568-uno",
+        "1663599433",
+        "1663599433-uno",
+        "1672190175",
+    }
+    local natives_script = {
+        name="Natives",
+        author="Stand",
+        description="Library files for scripts to interface with GTA.",
+    }
+    for _, natives_version in pairs(natives_versions) do
+        local native = {
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/lib/natives-"..natives_version..".lua",
+            script_relpath="lib/natives-"..natives_version..".lua",
+        }
+        if natives_script.install_config == nil then
+            natives_script.install_config = native
+            natives_script.install_config.dependencies = {}
+        else
+            table.insert(natives_script.install_config.dependencies, native)
+        end
+    end
+    return natives_script
+end
+table.insert(scripts_repository, build_natives_script())
 
 return scripts_repository
