@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.11"
+local SCRIPT_VERSION = "0.12"
 
 local scripts_repository = {
     {
@@ -89,6 +89,12 @@ local scripts_repository = {
         author="Lance",
         description="A bite-sized loadout manager for GTA V. Quickly save, clear, and load your loadouts from file. Share .loadout files with your friends and load them with no hassle.",
         project_url = "https://github.com/xSetrox/lance-loadout",
+    },
+    {
+        name="mehScript",
+        author="akat0zi",
+        description="Meh lua Script for Stand",
+        project_url = "https://github.com/akat0zi/mehScript",
     },
     {
         name="MusinessBanagement",
