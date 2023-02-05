@@ -4,7 +4,7 @@
 -- Manages installing and updating other Lua Scripts
 -- https://github.com/hexarobi/stand-lua-scriptmanager
 
-local SCRIPT_VERSION = "0.8"
+local SCRIPT_VERSION = "0.9"
 local AUTO_UPDATE_BRANCHES = {
     { "main", {}, "More stable, but updated less often.", "main", },
     { "dev", {}, "Cutting edge updates, but less stable.", "dev", },
@@ -217,7 +217,7 @@ local function install_script(script)
     script.install_config.auto_restart = false
     update_success = auto_updater.run_auto_update(script.install_config)
     debug_log("Install complete. "..tostring(update_success))
-    if script.install_config.script_run_name ~= nil then
+    if script.name == nil and script.install_config.script_run_name ~= nil then
         script.name = script.install_config.script_run_name
     end
     add_managed_script(script)
