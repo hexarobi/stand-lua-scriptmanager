@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.12"
+local SCRIPT_VERSION = "0.13"
 
 local scripts_repository = {
     {
@@ -139,6 +139,12 @@ local scripts_repository = {
         description="Automatic spinning of casino slot machine to make a quick $50mil per day.",
         project_url = "https://github.com/hexarobi/stand-lua-slotbot",
         discord_url = "https://discord.gg/2u5HbHPB9y",
+    },
+    {
+        name="Scriptcat Utilities",
+        author="Kerami",
+        description="Scriptcat Utilities.",
+        project_url = "https://github.com/Keramis/scriptcat-utilities",
     },
     {
         name="Undefined",
