@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.14"
+local SCRIPT_VERSION = "0.14.1"
 
 local scripts_repository = {
     {
@@ -145,6 +145,7 @@ local scripts_repository = {
         author="Kerami",
         description="Scriptcat Utilities.",
         project_url = "https://github.com/Keramis/scriptcat-utilities",
+        discord_url = "https://discord.gg/Bfapnxx34V",
         install_config={
             source_url="https://raw.githubusercontent.com/Keramis/scriptcat-utilities/main/scriptcat_utilities.lua",
             script_relpath="scriptcat_utilities.lua",
