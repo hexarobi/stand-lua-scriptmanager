@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.13"
+local SCRIPT_VERSION = "0.14"
 
 local scripts_repository = {
     {
@@ -145,6 +145,20 @@ local scripts_repository = {
         author="Kerami",
         description="Scriptcat Utilities.",
         project_url = "https://github.com/Keramis/scriptcat-utilities",
+        install_config={
+            source_url="https://raw.githubusercontent.com/Keramis/scriptcat-utilities/main/scriptcat_utilities.lua",
+            script_relpath="scriptcat_utilities.lua",
+            dependencies={
+                {
+                    source_url="https://raw.githubusercontent.com/Keramis/scriptcat-utilities/main/Universal_objects_list.lua",
+                    script_relpath="lib/Universal_objects_list.lua",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/Keramis/scriptcat-utilities/main/Universal_ped_list.lua",
+                    script_relpath="lib/Universal_ped_list.lua",
+                },
+            }
+        }
     },
     {
         name="Undefined",
