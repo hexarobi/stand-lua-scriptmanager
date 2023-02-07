@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.14.1"
+local SCRIPT_VERSION = "0.15"
 
 local scripts_repository = {
     {
@@ -9,6 +9,12 @@ local scripts_repository = {
         description = "Super fun script with tons of options, lovingly crafted by Acjoker. Jesus cage those griefing sinners!",
         project_url = "https://github.com/acjoker8818/AcjokerScript",
         discord_url = "https://discord.gg/fn4uBbFNnA",
+    },
+    {
+        name="AggressionScript",
+        author = "Axhov",
+        description = "Some of the attacker options from Lance Script TEOF in their own script, as well as improved.",
+        project_url = "https://github.com/Arysr/AggressionScript",
     },
     {
         name="Andy's Script",
