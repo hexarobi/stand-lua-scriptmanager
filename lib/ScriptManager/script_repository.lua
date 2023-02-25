@@ -1,15 +1,15 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.16"
+local SCRIPT_VERSION = "0.17"
 
 local scripts_repository = {
-    {
-        name = "AcjokerScript",
-        author = "Acjoker",
-        description = "Super fun script with tons of options, lovingly crafted by Acjoker. Jesus cage those griefing sinners!",
-        project_url = "https://github.com/acjoker8818/AcjokerScript",
-        discord_url = "https://discord.gg/fn4uBbFNnA",
-    },
+    --{
+    --    name = "AcjokerScript",
+    --    author = "Acjoker",
+    --    description = "Super fun script with tons of options, lovingly crafted by Acjoker. Jesus cage those griefing sinners!",
+    --    project_url = "https://github.com/acjoker8818/AcjokerScript",
+    --    discord_url = "https://discord.gg/fn4uBbFNnA",
+    --},
     {
         name="AggressionScript",
         author = "Axhov",
@@ -86,15 +86,21 @@ local scripts_repository = {
         description="An additional overlay window containing details about selected player.",
         project_url = "https://github.com/Lev200501/InfOverlay",
     },
+    --{
+    --    name="Jinxscript",
+    --    author="Prisuhm",
+    --    description="A must-have script full of great options.",
+    --    discord_url = "https://discord.gg/7AYFEtCXwm",
+    --    install_config={
+    --        source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/JinxScript.lua",
+    --        script_relpath="JinxScript.lua",
+    --    }
+    --},
     {
-        name="Jinxscript",
-        author="Prisuhm",
-        description="A must-have script full of great options.",
-        discord_url = "https://discord.gg/7AYFEtCXwm",
-        install_config={
-            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/JinxScript.lua",
-            script_relpath="JinxScript.lua",
-        }
+        name="KD Editor",
+        author="Kreeako",
+        description="Edit your kills and death stats to whatever value you want.",
+        project_url="https://github.com/Kreeako/KD-Editor",
     },
     {
         name="LanceLoadout",
@@ -103,10 +109,26 @@ local scripts_repository = {
         project_url = "https://github.com/xSetrox/lance-loadout",
     },
     {
+        name="Meteor",
+        author="NovaPlays",
+        description="Meteor is originally an 2take1 script i recoded everything i could or was not risky for online",
+        project_url = "https://github.com/NovaPlays134/Meteor",
+    },
+    {
         name="mehScript",
         author="akat0zi",
         description="Meh lua Script for Stand",
         project_url = "https://github.com/akat0zi/mehScript",
+    },
+    {
+        name="Mors Mutual",
+        author="Mr. Robot",
+        description="Instantly reclaim your personal vehicles whether they were destroyed and need to be claimed through Mors Mutual Insurance or have been impounded.",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/Mors_Mutual.lua",
+            script_relpath="Mors_Mutual.lua",
+            script_run_name="MorsMutual"
+        }
     },
     {
         name="MusinessBanagement",
