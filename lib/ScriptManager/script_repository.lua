@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.15"
+local SCRIPT_VERSION = "0.16"
 
 local scripts_repository = {
     {
@@ -79,6 +79,12 @@ local scripts_repository = {
         description="Play musical song files using your vehicle horn.",
         project_url = "https://github.com/hexarobi/stand-lua-hornsongs",
         discord_url = "https://discord.gg/2u5HbHPB9y",
+    },
+    {
+        name="InfOverlay",
+        author="lev",
+        description="An additional overlay window containing details about selected player.",
+        project_url = "https://github.com/Lev200501/InfOverlay",
     },
     {
         name="Jinxscript",
