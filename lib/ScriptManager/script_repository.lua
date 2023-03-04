@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.17"
+local SCRIPT_VERSION = "0.18"
 
 local scripts_repository = {
     --{
@@ -166,6 +166,17 @@ local scripts_repository = {
         description = "Load a Stand menu theme from several that replicate other menus look and feel.",
         project_url = "https://github.com/ukn-repos/rtl",
         discord_url = "https://discord.gg/N43aKNDJyF",
+    },
+    {
+        name = "Ryze",
+        author = "Pichocles",
+        description = "Pichocles's collection of scripted options",
+        project_url = "https://github.com/XxpichoclesxX/GtaVScripts",
+        discord_url = "https://discord.com/invite/BNbSHhunPv",
+        install_config={
+            source_url="https://raw.githubusercontent.com/XxpichoclesxX/GtaVScripts/Ryze-Scripts/Stand/Translations/RyzeStand_ENG.lua",
+            script_relpath="RyzeStand.lua",
+        }
     },
     {
         name="SlotBot",
