@@ -4,7 +4,7 @@
 -- Manages installing and updating other Lua Scripts
 -- https://github.com/hexarobi/stand-lua-scriptmanager
 
-local SCRIPT_VERSION = "0.6b1"
+local SCRIPT_VERSION = "0.9"
 local AUTO_UPDATE_BRANCHES = {
     { "main", {}, "More stable, but updated less often.", "main", },
     { "dev", {}, "Cutting edge updates, but less stable.", "dev", },
@@ -17,17 +17,17 @@ local selected_branch = AUTO_UPDATE_BRANCHES[SELECTED_BRANCH_INDEX][1]
 ---
 
 -- Auto Updater from https://github.com/hexarobi/stand-lua-auto-updater
-local status, auto_updater = pcall(require, "auto-updater-dev")
+local status, auto_updater = pcall(require, "auto-updater")
 if not status then
     local auto_update_complete = nil util.toast("Installing auto-updater...", TOAST_ALL)
-    async_http.init("raw.githubusercontent.com", "/hexarobi/stand-lua-auto-updater/dev/auto-updater-dev.lua",
+    async_http.init("raw.githubusercontent.com", "/hexarobi/stand-lua-auto-updater/dev/auto-updater.lua",
             function(result, headers, status_code)
                 local function parse_auto_update_result(result, headers, status_code)
                     local error_prefix = "Error downloading auto-updater: "
                     if status_code ~= 200 then util.toast(error_prefix..status_code, TOAST_ALL) return false end
                     if not result or result == "" then util.toast(error_prefix.."Found empty file.", TOAST_ALL) return false end
                     filesystem.mkdir(filesystem.scripts_dir() .. "lib")
-                    local file = io.open(filesystem.scripts_dir() .. "lib\\auto-updater-dev.lua", "wb")
+                    local file = io.open(filesystem.scripts_dir() .. "lib\\auto-updater.lua", "wb")
                     if file == nil then util.toast(error_prefix.."Could not open file for writing.", TOAST_ALL) return false end
                     file:write(result) file:close() util.toast("Successfully installed auto-updater lib", TOAST_ALL) return true
                 end
@@ -35,9 +35,9 @@ if not status then
             end, function() util.toast("Error downloading auto-updater lib. Update failed to download.", TOAST_ALL) end)
     async_http.dispatch() local i = 1 while (auto_update_complete == nil and i < 40) do util.yield(250) i = i + 1 end
     if auto_update_complete == nil then error("Error downloading auto-updater lib. HTTP Request timeout") end
-    auto_updater = require("auto-updater-dev")
+    auto_updater = require("auto-updater")
 end
-if auto_updater == true then error("Invalid auto-updater lib. Please delete your Stand/Lua Scripts/lib/auto-updater-dev.lua and try again") end
+if auto_updater == true then error("Invalid auto-updater lib. Please delete your Stand/Lua Scripts/lib/auto-updater.lua and try again") end
 
 ---
 --- Config
@@ -61,8 +61,8 @@ local auto_update_config = {
     dependencies={
         {
             name="scripts_repository",
-            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-scriptmanager/main/store/ScriptManager/script_repository.lua",
-            script_relpath="store/ScriptManager/script_repository.lua",
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-scriptmanager/main/lib/ScriptManager/script_repository.lua",
+            script_relpath="lib/ScriptManager/script_repository.lua",
         }
     }
 }
@@ -217,7 +217,7 @@ local function install_script(script)
     script.install_config.auto_restart = false
     update_success = auto_updater.run_auto_update(script.install_config)
     debug_log("Install complete. "..tostring(update_success))
-    if script.install_config.script_run_name ~= nil then
+    if script.name == nil and script.install_config.script_run_name ~= nil then
         script.name = script.install_config.script_run_name
     end
     add_managed_script(script)
@@ -306,6 +306,10 @@ local function build_script_menu(script)
             if script.install_config.script_run_name ~= nil then
                 run_name = script.install_config.script_run_name
             end
+            menu.focus(menu.ref_by_path("Stand>Lua Scripts"))
+            util.yield(100)
+            menu.focus(menu.ref_by_path("Stand>Lua Scripts>Repository"))
+            util.yield(100)
             menu.trigger_commands("lua"..run_name)
         end)
 
