@@ -1,18 +1,20 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.5"
+local SCRIPT_VERSION = "0.19"
 
 local scripts_repository = {
+    --{
+    --    name = "AcjokerScript",
+    --    author = "Acjoker",
+    --    description = "Super fun script with tons of options, lovingly crafted by Acjoker. Jesus cage those griefing sinners!",
+    --    project_url = "https://github.com/acjoker8818/AcjokerScript",
+    --    discord_url = "https://discord.gg/fn4uBbFNnA",
+    --},
     {
-        name = "AcJokerScript",
-        author = "AcJoker",
-        description = "Lots of useful and fun options, custom built by AcJoker.",
-        project_url = "https://github.com/acjoker8818/AcjokerScript",
-        discord_url = "https://discord.gg/fn4uBbFNnA",
-        install_config={
-            source_url="https://raw.githubusercontent.com/acjoker8818/AcjokerScript/main/AcjokerScript.lua",
-            script_relpath="AcjokerScript.lua",
-        }
+        name="AggressionScript",
+        author = "Axhov",
+        description = "Some of the attacker options from Lance Script TEOF in their own script, as well as improved.",
+        project_url = "https://github.com/Arysr/AggressionScript",
     },
     {
         name="Andy's Script",
@@ -35,6 +37,13 @@ local scripts_repository = {
         discord_url = "https://discord.gg/2u5HbHPB9y",
     },
     {
+        name="ClearTraffic",
+        author="Hexarobi",
+        description="Clears traffic from all roads for easy driving and drifting. Syncs to all players in lobby.",
+        project_url = "https://github.com/hexarobi/stand-lua-cleartraffic",
+        discord_url = "https://discord.gg/2u5HbHPB9y",
+    },
+    {
         name="CollectibleHelper",
         author="aaronlink127",
         description="Shows blips on the map for collectibles.",
@@ -43,6 +52,13 @@ local scripts_repository = {
             script_relpath="CollectibleHelper.lua",
         }
     },
+    --{
+    --    name="Copyify",
+    --    author=" JayMontana36",
+    --    description="real.",
+    --    project_url = "https://github.com/JayMontana36/JM36_Copify",
+    --    discord_url = "https://discord.gg/zaCVjtVP6x",
+    --},
     {
         name="GameCrunchScript",
         author="GameCrunch",
@@ -65,13 +81,68 @@ local scripts_repository = {
         discord_url = "https://discord.gg/2u5HbHPB9y",
     },
     {
-        name="Jinxscript",
-        author="Prisuhm",
-        description="A must-have script full of great options.",
-        discord_url = "https://discord.gg/7AYFEtCXwm",
+        name="InfOverlay",
+        author="lev",
+        description="An additional overlay window containing details about selected player.",
+        project_url = "https://github.com/Lev200501/InfOverlay",
+    },
+    --{
+    --    name="Jinxscript",
+    --    author="Prisuhm",
+    --    description="A must-have script full of great options.",
+    --    discord_url = "https://discord.gg/7AYFEtCXwm",
+    --    install_config={
+    --        source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/JinxScript.lua",
+    --        script_relpath="JinxScript.lua",
+    --    }
+    --},
+    {
+        name="KD Editor",
+        author="Kreeako",
+        description="Edit your kills and death stats to whatever value you want.",
+        project_url="https://github.com/Kreeako/KD-Editor",
+    },
+    {
+        name="LanceLoadout",
+        author="Lance",
+        description="A bite-sized loadout manager for GTA V. Quickly save, clear, and load your loadouts from file. Share .loadout files with your friends and load them with no hassle.",
+        project_url = "https://github.com/xSetrox/lance-loadout",
+    },
+    {
+        name = "LanceScript Reloaded",
+        author = "Lance",
+        description = "The latest version of LanceScript, tho it has since been abandoned by the author.",
         install_config={
-            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/JinxScript.lua",
-            script_relpath="JinxScript.lua",
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/LanceScript Reloaded.lua",
+            script_relpath="LanceScript Reloaded.lua",
+            dependencies={
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/lib/all_labels.lua",
+                    script_relpath="lib/all_labels.lua",
+                },
+            }
+        }
+    },
+    {
+        name="Meteor",
+        author="NovaPlays",
+        description="Meteor is originally an 2take1 script i recoded everything i could or was not risky for online",
+        project_url = "https://github.com/NovaPlays134/Meteor",
+    },
+    {
+        name="mehScript",
+        author="akat0zi",
+        description="Meh lua Script for Stand",
+        project_url = "https://github.com/akat0zi/mehScript",
+    },
+    {
+        name="Mors Mutual",
+        author="Mr. Robot",
+        description="Instantly reclaim your personal vehicles whether they were destroyed and need to be claimed through Mors Mutual Insurance or have been impounded.",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/Mors_Mutual.lua",
+            script_relpath="Mors_Mutual.lua",
+            script_run_name="MorsMutual"
         }
     },
     {
@@ -92,6 +163,12 @@ local scripts_repository = {
         project_url="https://github.com/xSetrox/next-translate",
     },
     {
+        name="NovaMeter",
+        author="NovaPlays",
+        description="A fully customizable speedometer for Gta with stand mod",
+        project_url="https://github.com/NovaPlays134/NovaMeter",
+    },
+    {
         name = "Policify",
         author = "Hexarobi",
         description = "Turns any vehicle into a police vehicle, with controllable flashing lights and sirens.",
@@ -106,12 +183,92 @@ local scripts_repository = {
         discord_url = "https://discord.gg/N43aKNDJyF",
     },
     {
+        name = "Ryze",
+        author = "Pichocles",
+        description = "Pichocles's collection of scripted options",
+        project_url = "https://github.com/XxpichoclesxX/GtaVScripts",
+        discord_url = "https://discord.com/invite/BNbSHhunPv",
+        install_config={
+            source_url="https://raw.githubusercontent.com/XxpichoclesxX/GtaVScripts/Ryze-Scripts/Stand/Translations/RyzeStand_ENG.lua",
+            script_relpath="RyzeStand.lua",
+        }
+    },
+    {
         name="SlotBot",
         author="Hexarobi",
         description="Automatic spinning of casino slot machine to make a quick $50mil per day.",
         project_url = "https://github.com/hexarobi/stand-lua-slotbot",
         discord_url = "https://discord.gg/2u5HbHPB9y",
     },
+    {
+        name="Scriptcat Utilities",
+        author="Kerami",
+        description="Scriptcat Utilities.",
+        project_url = "https://github.com/Keramis/scriptcat-utilities",
+        discord_url = "https://discord.gg/Bfapnxx34V",
+        install_config={
+            source_url="https://raw.githubusercontent.com/Keramis/scriptcat-utilities/main/scriptcat_utilities.lua",
+            script_relpath="scriptcat_utilities.lua",
+            dependencies={
+                {
+                    source_url="https://raw.githubusercontent.com/Keramis/scriptcat-utilities/main/Universal_objects_list.lua",
+                    script_relpath="lib/Universal_objects_list.lua",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/Keramis/scriptcat-utilities/main/Universal_ped_list.lua",
+                    script_relpath="lib/Universal_ped_list.lua",
+                },
+            }
+        }
+    },
+    {
+        name="Stand Watermark Reloaded",
+        author="Аpзyзеhыw",
+        description="Updated version of watermark from IMXNOOBX.",
+        project_url = "https://github.com/BluetoothWiFi/Stand-watermark/",
+    },
+    {
+        name="Undefined",
+        author="Undefined Pony",
+        description="The script mainly features aim actions, aim teleport, aim beam, online players list and player ESP, but it also has other cool features.",
+        project_url="https://gitlab.com/undefinedscripts/undefined-for-stand",
+        install_config={
+            source_url="https://gitlab.com/undefinedscripts/undefined-for-stand/-/raw/main/Undefined.lua",
+            script_relpath="Undefined.lua",
+        }
+    },
 }
+
+local function build_natives_script()
+    local natives_versions = {
+        "1627063482",
+        "1640181023",
+        "1651208000",
+        "1660775568",
+        "1660775568-uno",
+        "1663599433",
+        "1663599433-uno",
+        "1672190175",
+    }
+    local natives_script = {
+        name="Natives",
+        author="Stand",
+        description="Library files for scripts to interface with GTA.",
+    }
+    for _, natives_version in pairs(natives_versions) do
+        local native = {
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/lib/natives-"..natives_version..".lua",
+            script_relpath="lib/natives-"..natives_version..".lua",
+        }
+        if natives_script.install_config == nil then
+            natives_script.install_config = native
+            natives_script.install_config.dependencies = {}
+        else
+            table.insert(natives_script.install_config.dependencies, native)
+        end
+    end
+    return natives_script
+end
+table.insert(scripts_repository, build_natives_script())
 
 return scripts_repository
