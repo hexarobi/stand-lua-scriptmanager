@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.18"
+local SCRIPT_VERSION = "0.19"
 
 local scripts_repository = {
     --{
@@ -109,6 +109,21 @@ local scripts_repository = {
         project_url = "https://github.com/xSetrox/lance-loadout",
     },
     {
+        name = "LanceScript Reloaded",
+        author = "Lance",
+        description = "The latest version of LanceScript, tho it has since been abandoned by the author.",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/LanceScript Reloaded.lua",
+            script_relpath="LanceScript Reloaded.lua",
+            dependencies={
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/lib/all_labels.lua",
+                    script_relpath="lib/all_labels.lua",
+                },
+            }
+        }
+    },
+    {
         name="Meteor",
         author="NovaPlays",
         description="Meteor is originally an 2take1 script i recoded everything i could or was not risky for online",
@@ -205,6 +220,12 @@ local scripts_repository = {
                 },
             }
         }
+    },
+    {
+        name="Stand Watermark Reloaded",
+        author="Аpзyзеhыw",
+        description="Updated version of watermark from IMXNOOBX.",
+        project_url = "https://github.com/BluetoothWiFi/Stand-watermark/",
     },
     {
         name="Undefined",
