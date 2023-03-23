@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.19.1"
+local SCRIPT_VERSION = "0.20"
 
 local scripts_repository = {
     --{
@@ -199,6 +199,12 @@ local scripts_repository = {
         description="Automatic spinning of casino slot machine to make a quick $50mil per day.",
         project_url = "https://github.com/hexarobi/stand-lua-slotbot",
         discord_url = "https://discord.gg/2u5HbHPB9y",
+    },
+    {
+        name="SoulScript",
+        author="SoulReaper",
+        description="SoulReaper's collection of awesome stuff.",
+        project_url = "https://github.com/epickeatongamer/SoulScript",
     },
     {
         name="Scriptcat Utilities",
