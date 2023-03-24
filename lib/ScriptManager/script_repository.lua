@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.20"
+local SCRIPT_VERSION = "0.20.1"
 
 local scripts_repository = {
     --{
@@ -203,8 +203,9 @@ local scripts_repository = {
     {
         name="SoulScript",
         author="SoulReaper",
-        description="SoulReaper's collection of awesome stuff.",
+        description="SoulReapers collection of sweet features.",
         project_url = "https://github.com/epickeatongamer/SoulScript",
+        discord_url = "https://discord.gg/JSJhFg8whC",
     },
     {
         name="Scriptcat Utilities",
