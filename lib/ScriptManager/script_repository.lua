@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.21"
+local SCRIPT_VERSION = "0.22"
 
 local scripts_repository = {
     --{
@@ -72,6 +72,13 @@ local scripts_repository = {
         description="Complete your heists with ease.",
         project_url = "https://github.com/IceDoomfist/Stand-Heist-Control",
         discord_url = "https://discord.gg/KTFAYQn5Xz",
+    },
+    {
+        name="HexaScript",
+        author="Hexarobi",
+        description="Makes chat commands easier to use for everyone in the lobby.",
+        project_url = "https://github.com/hexarobi/stand-lua-hexascript",
+        discord_url = "https://discord.gg/2u5HbHPB9y",
     },
     {
         name="HornSongs",
