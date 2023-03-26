@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.20.1"
+local SCRIPT_VERSION = "0.21"
 
 local scripts_repository = {
     --{
@@ -167,6 +167,14 @@ local scripts_repository = {
         author="NovaPlays",
         description="A fully customizable speedometer for Gta with stand mod",
         project_url="https://github.com/NovaPlays134/NovaMeter",
+        discord_url="https://discord.gg/ZHpE9YpkZG",
+    },
+    {
+        name="NovaScript",
+        author="NovaPlays",
+        description="A fun trolling script for Gta v mod Stand with lots of self, vehicle, weapons, trolling and player vehicle options",
+        project_url="https://github.com/NovaPlays134/NovaScript",
+        discord_url="https://discord.gg/ZHpE9YpkZG",
     },
     {
         name = "Policify",
