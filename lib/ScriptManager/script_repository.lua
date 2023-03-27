@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.22"
+local SCRIPT_VERSION = "0.23"
 
 local scripts_repository = {
     --{
@@ -59,6 +59,12 @@ local scripts_repository = {
     --    project_url = "https://github.com/JayMontana36/JM36_Copify",
     --    discord_url = "https://discord.gg/zaCVjtVP6x",
     --},
+    {
+        name="FOV Linear Interpolation",
+        author="Skylar",
+        description="Smooth Field-of-View Linear-Interpolation for people that use a different FOV on foot/in vehicles and don't like the jarring pop effect that it creates.",
+        project_url = "https://github.com/skywur/stand-fov-lerp",
+    },
     {
         name="GameCrunchScript",
         author="GameCrunch",
@@ -167,7 +173,12 @@ local scripts_repository = {
         name="next-translate",
         author="Lance",
         description="Next-Translate is a chat translator script that is as simple and intelligent as possible",
-        project_url="https://github.com/xSetrox/next-translate",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/next_translate.lua",
+            script_relpath="next_translate.lua",
+            script_run_name="nexttranslate"
+        }
+
     },
     {
         name="NovaMeter",
