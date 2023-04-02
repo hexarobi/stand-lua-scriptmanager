@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.23"
+local SCRIPT_VERSION = "0.24"
 
 local scripts_repository = {
     --{
@@ -259,6 +259,13 @@ local scripts_repository = {
         author="Аpзyзеhыw",
         description="Updated version of watermark from IMXNOOBX.",
         project_url = "https://github.com/BluetoothWiFi/Stand-watermark/",
+    },
+    {
+        name="Theme Loader",
+        author="SoulReaper",
+        description="Basic theme loader for stand.",
+        project_url = "https://github.com/epickeatongamer/Theme_Loader",
+        discord_url = "https://discord.gg/JSJhFg8whC",
     },
     {
         name="Undefined",
