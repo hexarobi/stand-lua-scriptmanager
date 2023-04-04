@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.24"
+local SCRIPT_VERSION = "0.25"
 
 local scripts_repository = {
     --{
@@ -114,6 +114,22 @@ local scripts_repository = {
         author="Kreeako",
         description="Edit your kills and death stats to whatever value you want.",
         project_url="https://github.com/Kreeako/KD-Editor",
+    },
+    {
+        name = "KeramiScript",
+        author = "Keramis",
+        description = "The latest version of LanceScript, tho it has since been abandoned by the author.",
+        project_url = "https://github.com/Keramis/Sneaky-Explosions-STANDAPI",
+        install_config={
+            source_url="https://raw.githubusercontent.com/Keramis/Sneaky-Explosions-STANDAPI/main/KeramiScript%20V.10.lua",
+            script_relpath="KeramiScript.lua",
+            dependencies={
+                {
+                    source_url="https://raw.githubusercontent.com/Keramis/Sneaky-Explosions-STANDAPI/main/KeramiScriptLib.lua",
+                    script_relpath="lib/KeramiScriptLib.lua",
+                },
+            }
+        }
     },
     {
         name="LanceLoadout",
