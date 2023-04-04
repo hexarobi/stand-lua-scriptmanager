@@ -118,7 +118,7 @@ local scripts_repository = {
     {
         name = "KeramiScript",
         author = "Keramis",
-        description = "The latest version of LanceScript, tho it has since been abandoned by the author.",
+        description = "A utility/pvp script for the Stand Mod Menu for GTAV.",
         project_url = "https://github.com/Keramis/Sneaky-Explosions-STANDAPI",
         install_config={
             source_url="https://raw.githubusercontent.com/Keramis/Sneaky-Explosions-STANDAPI/main/KeramiScript%20V.10.lua",
