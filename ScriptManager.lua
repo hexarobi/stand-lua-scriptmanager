@@ -4,7 +4,7 @@
 -- Manages installing and updating other Lua Scripts
 -- https://github.com/hexarobi/stand-lua-scriptmanager
 
-local SCRIPT_VERSION = "0.10"
+local SCRIPT_VERSION = "0.11"
 local AUTO_UPDATE_BRANCHES = {
     { "main", {}, "More stable, but updated less often.", "main", },
     { "dev", {}, "Cutting edge updates, but less stable.", "dev", },
@@ -266,6 +266,7 @@ local function init_menus(root, menu_key)
 end
 
 local function run_new_script(run_name)
+    util.yield(250)
     menu.focus(menu.ref_by_path("Stand>Lua Scripts"))
     util.yield(250)
     menu.focus(menu.ref_by_path("Stand>Lua Scripts>Repository"))
