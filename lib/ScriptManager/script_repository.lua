@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.25"
+local SCRIPT_VERSION = "0.26"
 
 local scripts_repository = {
     --{
@@ -131,11 +131,17 @@ local scripts_repository = {
             }
         }
     },
+    --{
+    --    name="LanceLoadout",
+    --    author="Lance",
+    --    description="A bite-sized loadout manager for GTA V. Quickly save, clear, and load your loadouts from file. Share .loadout files with your friends and load them with no hassle.",
+    --    project_url = "https://github.com/xSetrox/lance-loadout",
+    --},
     {
-        name="LanceLoadout",
+        name="LanceScript v11",
         author="Lance",
-        description="A bite-sized loadout manager for GTA V. Quickly save, clear, and load your loadouts from file. Share .loadout files with your friends and load them with no hassle.",
-        project_url = "https://github.com/xSetrox/lance-loadout",
+        description="LanceScript is a swiss-army knife for everything Stand and GTA V. There are options for folks of all levels of toxicity, and even if you don't troll, you will find a lot of use and fun out of LanceScript.",
+        project_url = "https://github.com/stakonum/lancescript",
     },
     {
         name = "LanceScript Reloaded",
