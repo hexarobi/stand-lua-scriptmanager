@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.26"
+local SCRIPT_VERSION = "0.27"
 
 local scripts_repository = {
     --{
@@ -127,6 +127,14 @@ local scripts_repository = {
                 {
                     source_url="https://raw.githubusercontent.com/Keramis/Sneaky-Explosions-STANDAPI/main/KeramiScriptLib.lua",
                     script_relpath="lib/KeramiScriptLib.lua",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/lib/Universal_objects_list.lua",
+                    script_relpath="lib/Universal_objects_list.lua",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/lib/Universal_ped_list.lua",
+                    script_relpath="lib/Universal_ped_list.lua",
                 },
             }
         }
