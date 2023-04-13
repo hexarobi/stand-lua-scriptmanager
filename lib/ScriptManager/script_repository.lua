@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.27"
+local SCRIPT_VERSION = "0.28"
 
 local scripts_repository = {
     --{
@@ -22,6 +22,12 @@ local scripts_repository = {
         description="AndyScript for Stand GTA V mod menu",
         project_url="https://github.com/Lancito01/AndyScript",
         discord_url="https://discord.gg/9vzATnaM9c",
+    },
+    {
+        name="Animation",
+        author="Rachmad",
+        description="Animations that can be seen by other players, including hands up & crouch",
+        project_url="https://github.com/Rachmad42/Emote-Stand-Lua",
     },
     {
         name="BallDrop",
