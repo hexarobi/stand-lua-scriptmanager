@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.28"
+local SCRIPT_VERSION = "0.29"
 
 local scripts_repository = {
     --{
@@ -66,6 +66,21 @@ local scripts_repository = {
     --    discord_url = "https://discord.gg/zaCVjtVP6x",
     --},
     {
+        name="Custom Loadout",
+        author="Davus",
+        description="A weapon management Lua for Stand.",
+        install_config={
+            source_url="https://raw.githubusercontent.com/Davus0717/custom-loadouts/master/src/custom-loadout.lua",
+            script_relpath="custom-loadout.lua",
+            dependencies={
+                {
+                    source_url="https://raw.githubusercontent.com/Davus0717/custom-loadouts/master/src/lib/custom-loadout/component_resources.lua",
+                    script_relpath="lib/custom-loadout/component_resources.lua",
+                }
+            }
+        }
+    },
+    {
         name="FOV Linear Interpolation",
         author="Skylar",
         description="Smooth Field-of-View Linear-Interpolation for people that use a different FOV on foot/in vehicles and don't like the jarring pop effect that it creates.",
@@ -113,6 +128,21 @@ local scripts_repository = {
     --    install_config={
     --        source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/JinxScript.lua",
     --        script_relpath="JinxScript.lua",
+    --    }
+    --},
+    --{
+    --    name="JM36 Elements",
+    --    author="JayMontana36",
+    --    description="A set of scripts/modules made for JM36 Lua Modularity Framework (based upon JM36 Lua Plugin)",
+    --    project_url = "https://github.com/JayMontana36/JM36_Elements-Public",
+    --    install_config={
+    --        project_url = "https://github.com/JayMontana36/JM36_Elements-Public",
+    --        dependencies={
+    --            {
+    --                source_url="https://raw.githubusercontent.com/JayMontana36/JM36_Lua_Modularity_Framework-Stand/main/JM36_Lua_Modularity_Framework-Stand.lua",
+    --                script_relpath="JM36_Lua_Modularity_Framework-Stand.lua",
+    --            },
+    --        }
     --    }
     --},
     {
