@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.30"
+local SCRIPT_VERSION = "0.30.1"
 
 local scripts_repository = {
     --{
@@ -88,6 +88,10 @@ local scripts_repository = {
             source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/flightredux.lua",
             script_relpath="flightredux.lua",
             dependencies={
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/lib/aalib.dll",
+                    script_relpath="lib/aalib.dll",
+                },
                 {
                     source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/altimeter.png",
                     script_relpath="resources/flightredux/altimeter.png",
