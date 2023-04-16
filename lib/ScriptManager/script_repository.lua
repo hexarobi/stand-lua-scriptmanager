@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.29"
+local SCRIPT_VERSION = "0.30"
 
 local scripts_repository = {
     --{
@@ -77,6 +77,49 @@ local scripts_repository = {
                     source_url="https://raw.githubusercontent.com/Davus0717/custom-loadouts/master/src/lib/custom-loadout/component_resources.lua",
                     script_relpath="lib/custom-loadout/component_resources.lua",
                 }
+            }
+        }
+    },
+    {
+        name="FlightRedux",
+        author="Lance",
+        description="FlightRedux completely revamps GTA V's huds for jets and offers additional functionality and realism, including an implementation of the Ground Proximity Warning System, missile warnings, missile markings on the map, altitude, pitch, heading, and roll indicators, better lock-on indicators, and much, much more. Plus, it looks a lot better than GTA V's default HUD.",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/flightredux.lua",
+            script_relpath="flightredux.lua",
+            dependencies={
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/altimeter.png",
+                    script_relpath="resources/flightredux/altimeter.png",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/boresight.png",
+                    script_relpath="resources/flightredux/boresight.png",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/circle.png",
+                    script_relpath="resources/flightredux/circle.png",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/contact.png",
+                    script_relpath="resources/flightredux/contact.png",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/line.png",
+                    script_relpath="resources/flightredux/line.png",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/trajectory.png",
+                    script_relpath="resources/flightredux/trajectory.png",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/missile.wav",
+                    script_relpath="resources/flightredux/missile.wav",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/terrain.wav",
+                    script_relpath="resources/flightredux/terrain.wav",
+                },
             }
         }
     },
