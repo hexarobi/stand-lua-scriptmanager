@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.30.1"
+local SCRIPT_VERSION = "0.31"
 
 local scripts_repository = {
     --{
