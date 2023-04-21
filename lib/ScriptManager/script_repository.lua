@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.31"
+local SCRIPT_VERSION = "0.31.1"
 
 local scripts_repository = {
     --{
@@ -267,9 +267,9 @@ local scripts_repository = {
         }
     },
     {
-        name = "LanceScript Reloaded",
+        name = "LanceScript v10",
         author = "Lance",
-        description = "The latest version of LanceScript, tho it has since been abandoned by the author.",
+        description = "LanceScript Reloaded has since been updated to LanceScript v11",
         install_config={
             source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/LanceScriptReloaded.lua",
             script_relpath="LanceScript Reloaded.lua",
