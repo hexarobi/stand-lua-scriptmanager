@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.31.1"
+local SCRIPT_VERSION = "0.31.2"
 
 local scripts_repository = {
     --{
@@ -262,6 +262,18 @@ local scripts_repository = {
                 {
                     source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/lancescript/lancescript_logo.png",
                     script_relpath="resources/lancescript/lancescript_logo.png",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/store/lancescript/translations/english.lua",
+                    script_relpath="store/lancescript/translations/english.lua",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/store/lancescript/translations/last_version.txt",
+                    script_relpath="store/lancescript/translations/last_version.txt",
+                },
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/store/lancescript/translations/selected_language.txt",
+                    script_relpath="store/lancescript/translations/selected_language.txt",
                 },
             }
         }
