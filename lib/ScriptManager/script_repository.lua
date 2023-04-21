@@ -192,6 +192,29 @@ local scripts_repository = {
     --        }
     --    }
     --},
+    --{
+    --    name="Keplar",
+    --    author="Lance",
+    --    description="A successor to LanceScript, Kepler is an experimental, reimagined megascript for the Stand mod menu.",
+    --    install_config={
+    --        source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/Kepler.lua",
+    --        script_relpath="Kepler.lua",
+    --        dependencies={
+    --            {
+    --                source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/kepler/logo.png",
+    --                script_relpath="resources/kepler/logo.png",
+    --            },
+    --            {
+    --                source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/kepler/notification.wav",
+    --                script_relpath="resources/kepler/notification.wav",
+    --            },
+    --            {
+    --                source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/kepler/startup.wav",
+    --                script_relpath="resources/kepler/startup.wav",
+    --            },
+    --        }
+    --    }
+    --},
     {
         name="KD Editor",
         author="Kreeako",
@@ -232,7 +255,16 @@ local scripts_repository = {
         name="LanceScript v11",
         author="Lance",
         description="LanceScript is a swiss-army knife for everything Stand and GTA V. There are options for folks of all levels of toxicity, and even if you don't troll, you will find a lot of use and fun out of LanceScript.",
-        project_url = "https://github.com/stakonum/lancescript",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/LanceScript.lua",
+            script_relpath="LanceScript.lua",
+            dependencies={
+                {
+                    source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/lancescript/lancescript_logo.png",
+                    script_relpath="resources/lancescript/lancescript_logo.png",
+                },
+            }
+        }
     },
     {
         name = "LanceScript Reloaded",
@@ -248,6 +280,12 @@ local scripts_repository = {
                 },
             }
         }
+    },
+    {
+        name="Magnet-Helis",
+        author="DynastySheep",
+        description="Lets you spawn cargobob and skylift with functioning magnets.",
+        project_url = "https://github.com/DynastySheep/Magnet-Helis",
     },
     {
         name="Meteor",
