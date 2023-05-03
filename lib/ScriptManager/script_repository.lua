@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.31.3"
+local SCRIPT_VERSION = "0.32"
 
 local scripts_repository = {
     --{
@@ -319,16 +319,16 @@ local scripts_repository = {
         description="Meh lua Script for Stand",
         project_url = "https://github.com/akat0zi/mehScript",
     },
-    {
-        name="Mors Mutual",
-        author="Mr. Robot",
-        description="Instantly reclaim your personal vehicles whether they were destroyed and need to be claimed through Mors Mutual Insurance or have been impounded.",
-        install_config={
-            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/Mors_Mutual.lua",
-            script_relpath="Mors_Mutual.lua",
-            script_run_name="MorsMutual"
-        }
-    },
+    --{
+    --    name="Mors Mutual",
+    --    author="Mr. Robot",
+    --    description="Instantly reclaim your personal vehicles whether they were destroyed and need to be claimed through Mors Mutual Insurance or have been impounded.",
+    --    install_config={
+    --        source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/Mors_Mutual.lua",
+    --        script_relpath="Mors_Mutual.lua",
+    --        script_run_name="MorsMutual"
+    --    }
+    --},
     {
         name="MusinessBanagement",
         author="ICYPhoenix and Ren",
@@ -339,6 +339,12 @@ local scripts_repository = {
             script_relpath="MusinessBanagersource.lua",
             script_run_name="MusinessBanagersource"
         }
+    },
+    {
+        name="MrRobot",
+        author="MrRobot",
+        description="MrRobot's modular script",
+        project_url = "https://github.com/4d72526f626f74/MrRobot",
     },
     {
         name="next-translate",
