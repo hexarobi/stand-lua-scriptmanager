@@ -4,13 +4,22 @@
 -- Manages installing and updating other Lua Scripts
 -- https://github.com/hexarobi/stand-lua-scriptmanager
 
-local SCRIPT_VERSION = "0.12"
+local SCRIPT_VERSION = "0.13"
 local AUTO_UPDATE_BRANCHES = {
     { "main", {}, "More stable, but updated less often.", "main", },
     { "dev", {}, "Cutting edge updates, but less stable.", "dev", },
 }
 local SELECTED_BRANCH_INDEX = 1
 local selected_branch = AUTO_UPDATE_BRANCHES[SELECTED_BRANCH_INDEX][1]
+
+---
+--- Validate Internet Access Enabled
+---
+
+if not async_http.have_access() then
+    util.toast("To use ScriptManager please enable internet access", TOAST_ALL)
+    util.stop_script()
+end
 
 ---
 --- Auto-Updater Lib Install
