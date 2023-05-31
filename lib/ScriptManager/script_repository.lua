@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.32"
+local SCRIPT_VERSION = "0.33"
 
 local scripts_repository = {
     --{
@@ -70,8 +70,8 @@ local scripts_repository = {
         author="Davus",
         description="A weapon management Lua for Stand.",
         install_config={
-            source_url="https://raw.githubusercontent.com/Davus0717/custom-loadouts/master/src/custom-loadout.lua",
-            script_relpath="custom-loadout.lua",
+            source_url="https://raw.githubusercontent.com/Davus0717/custom-loadouts/master/src/custom-loadout.pluto",
+            script_relpath="custom-loadout.pluto",
             dependencies={
                 {
                     source_url="https://raw.githubusercontent.com/Davus0717/custom-loadouts/master/src/lib/custom-loadout/component_resources.lua",
