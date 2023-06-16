@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.33"
+local SCRIPT_VERSION = "0.33.1"
 
 local scripts_repository = {
     --{
@@ -118,19 +118,19 @@ local scripts_repository = {
                 },
                 {
                     source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/missile.wav",
-                    script_relpath="resources/flightredux/missile.wav",
+                    script_relpath="store/flightredux/missile.wav",
                 },
                 {
                     source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/terrain.wav",
-                    script_relpath="resources/flightredux/terrain.wav",
+                    script_relpath="store/flightredux/terrain.wav",
                 },
                 {
                     source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/missile.txt",
-                    script_relpath="resources/flightredux/missile.txt",
+                    script_relpath="store/flightredux/missile.txt",
                 },
                 {
                     source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/resources/flightredux/terrain.txt",
-                    script_relpath="resources/flightredux/terrain.txt",
+                    script_relpath="store/flightredux/terrain.txt",
                 },
             }
         }
