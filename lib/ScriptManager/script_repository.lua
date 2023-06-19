@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.33.1"
+local SCRIPT_VERSION = "0.34"
 
 local scripts_repository = {
     --{
@@ -300,6 +300,12 @@ local scripts_repository = {
                 },
             }
         }
+    },
+    {
+        name="LolaScript",
+        author="LolaTheSquishy",
+        description="Lola's fun options.",
+        project_url = "https://github.com/LolaThePretty/LolaScript",
     },
     {
         name="Magnet-Helis",
