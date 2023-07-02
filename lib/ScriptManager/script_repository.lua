@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.34"
+local SCRIPT_VERSION = "0.35"
 
 local scripts_repository = {
     --{
@@ -385,6 +385,12 @@ local scripts_repository = {
         discord_url = "https://discord.gg/2u5HbHPB9y",
     },
     {
+        name = "PolyglotTranslator",
+        author = "Totoro-Li",
+        description = "This script provides translations between different languages by interfacing with external translation APIs like Google Translate and ChatGPT.",
+        project_url = "https://github.com/Totoro-Li/PolyglotTranslator",
+    },
+    {
         name = "RTL: REPLICA Theme Loader",
         author = "ukn",
         description = "Load a Stand menu theme from several that replicate other menus look and feel.",
@@ -415,6 +421,15 @@ local scripts_repository = {
         description="SoulReapers collection of sweet features.",
         project_url = "https://github.com/epickeatongamer/SoulScript",
         discord_url = "https://discord.gg/JSJhFg8whC",
+    },
+    {
+        name="Stand: Focus Link Creator",
+        author="Kodama",
+        description="This tool will enable you to copy any Stand address and convert it into a clickable link.",
+        install_config={
+            source_url="https://cdn.discordapp.com/attachments/1123098388418797568/1123098432580632578/get-focus-link.pluto",
+            script_relpath="get-focus-link.pluto",
+        }
     },
     {
         name="Scriptcat Utilities",
