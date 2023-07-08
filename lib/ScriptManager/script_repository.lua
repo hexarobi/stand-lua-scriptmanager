@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.36"
+local SCRIPT_VERSION = "0.37"
 
 local scripts_repository = {
     --{
@@ -464,6 +464,16 @@ local scripts_repository = {
         description="Basic theme loader for stand.",
         project_url = "https://github.com/epickeatongamer/Theme_Loader",
         discord_url = "https://discord.gg/JSJhFg8whC",
+    },
+    {
+        name="Theme Repo",
+        author="Stagnate",
+        description="Lua script to apply headers and themes blazingly fast.",
+        project_url = "https://github.com/stagnate6628/stand-themerepo",
+        install_config={
+            source_url="https://raw.githubusercontent.com/stagnate6628/stand-themerepo/main/ThemeRepo.pluto",
+            script_relpath="ThemeRepo.pluto",
+        },
     },
     {
         name="Undefined",
