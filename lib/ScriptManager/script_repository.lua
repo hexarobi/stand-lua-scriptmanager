@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.35"
+local SCRIPT_VERSION = "0.36"
 
 local scripts_repository = {
     --{
@@ -390,13 +390,13 @@ local scripts_repository = {
         description = "This script provides translations between different languages by interfacing with external translation APIs like Google Translate and ChatGPT.",
         project_url = "https://github.com/Totoro-Li/PolyglotTranslator",
     },
-    {
-        name = "RTL: REPLICA Theme Loader",
-        author = "ukn",
-        description = "Load a Stand menu theme from several that replicate other menus look and feel.",
-        project_url = "https://github.com/ukn-repos/rtl",
-        discord_url = "https://discord.gg/N43aKNDJyF",
-    },
+    --{
+    --    name = "RTL: REPLICA Theme Loader",
+    --    author = "ukn",
+    --    description = "Load a Stand menu theme from several that replicate other menus look and feel.",
+    --    project_url = "https://github.com/ukn-repos/rtl",
+    --    discord_url = "https://discord.gg/N43aKNDJyF",
+    --},
     {
         name = "Ryze",
         author = "Pichocles",
