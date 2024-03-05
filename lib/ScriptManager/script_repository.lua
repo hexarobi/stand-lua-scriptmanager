@@ -1,6 +1,6 @@
 -- ScriptManager - Script Repository
 
-local SCRIPT_VERSION = "0.37"
+local SCRIPT_VERSION = "0.38"
 
 local scripts_repository = {
     --{
@@ -28,6 +28,16 @@ local scripts_repository = {
         author="Rachmad",
         description="Animations that can be seen by other players, including hands up & crouch",
         project_url="https://github.com/Rachmad42/Emote-Stand-Lua",
+    },
+    {
+        name="AR-GPS",
+        author="Murten and MasterPepe",
+        description="Adds a 3D waypoint path to the game for following a route without taking your eyes off the road.",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/AR-GPS.pluto",
+            script_relpath="AR-GPS.pluto",
+            script_run_name="ARGPS"
+        }
     },
     {
         name="BallDrop",
@@ -79,6 +89,13 @@ local scripts_repository = {
                 }
             }
         }
+    },
+    {
+        name="DOLOS",
+        author="Lance",
+        description="DOLOS, named after the Greek spirit of trickery, is an advanced trolling Lua that includes many enhanced classic trolling options as well as many new, never before-seen ones.",
+        project_url = "https://github.com/thebitwise/dolos",
+        discord_url = "https://discord.gg/zZ2eEjj88v",
     },
     {
         name="FlightRedux",
@@ -361,7 +378,6 @@ local scripts_repository = {
             script_relpath="next_translate.lua",
             script_run_name="nexttranslate"
         }
-
     },
     {
         name="NovaMeter",
@@ -376,6 +392,23 @@ local scripts_repository = {
         description="A fun trolling script for Gta v mod Stand with lots of self, vehicle, weapons, trolling and player vehicle options",
         project_url="https://github.com/NovaPlays134/NovaScript",
         discord_url="https://discord.gg/ZHpE9YpkZG",
+    },
+    {
+        name="PlayerSearch",
+        author="Parci",
+        description="Social Club Player Browser",
+        install_config={
+            source_url="https://raw.githubusercontent.com/hexarobi/stand-lua-script-repository/main/PlayerSearch.lua",
+            script_relpath="PlayerSearch.lua",
+            script_run_name="playersearch"
+        }
+    },
+    {
+        name = "Policify",
+        author = "Hexarobi",
+        description = "Turns any vehicle into a police vehicle, with controllable flashing lights and sirens.",
+        project_url = "https://github.com/hexarobi/stand-lua-policify",
+        discord_url = "https://discord.gg/2u5HbHPB9y",
     },
     {
         name = "Policify",
