@@ -411,13 +411,6 @@ local scripts_repository = {
         discord_url = "https://discord.gg/2u5HbHPB9y",
     },
     {
-        name = "Policify",
-        author = "Hexarobi",
-        description = "Turns any vehicle into a police vehicle, with controllable flashing lights and sirens.",
-        project_url = "https://github.com/hexarobi/stand-lua-policify",
-        discord_url = "https://discord.gg/2u5HbHPB9y",
-    },
-    {
         name = "PolyglotTranslator",
         author = "Totoro-Li",
         description = "This script provides translations between different languages by interfacing with external translation APIs like Google Translate and ChatGPT.",
